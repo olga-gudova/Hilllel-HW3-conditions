@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Условные конструкции, домашка</title>
+</head>
+<body>
+    <p style="display: flex; justify-content: center; align-items: center; font-size: 24px; color:darkblue;">Спасибо за Ваш труд!</p>
+    <script>
+
+        let userAge = prompt('Сколько Вам лет?', 99);
+        if (userAge < 0) {
+            alert('Так не бывает ведь;)');
+        } else if (userAge%10 == 0 || userAge%10 >= 5 && userAge%10 <= 9 || userAge >= 11 && userAge <= 19) {
+            alert(userAge + ' лет - это лучший возраст!');
+        } else if (userAge%10 == 1) {
+            alert(userAge + ' год - это лучший возраст!');
+        } else {
+            alert(userAge + ' года - это лучший возраст!');
+        }
+
+    </script>
+</body>
+</html>
